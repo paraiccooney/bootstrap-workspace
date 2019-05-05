@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="boxy col-12">12</div>
+        </div>
+        <div class="row">
+            <div class="boxy col-6">6</div>
+            <div class="boxy col-6">6</div>
+        </div>
+        <div class="row">
+            <div class="boxy col-4">4</div>
+            <div class="boxy col-4">4</div>
+            <div class="boxy col-4">4</div>
+            <div class="boxy col-4">4 (This one has overflowed from above)</div>
+        </div>
+        <div class="row">
+            <div class="boxy col-2">2</div>
+            <div class="boxy col-2">2</div>
+            <div class="boxy col-2">2</div>
+            <div class="boxy col-2">2</div>
+            <div class="boxy col-2">2</div>
+            <div class="boxy col-2">2</div>
+        </div>
+        <div class="row">
+            <div class="boxy col-1">1</div>
+            <div class="boxy col-1">1</div>
+            <div class="boxy col-1">1</div>
+            <div class="boxy col-7">7</div>
+            <div class="boxy col-1">1</div>
+            <div class="boxy col-1">1</div>
+        </div>
+        <div class="row">
+            <div class="boxy col-6 offset-3">6 offset 3</div>
+        </div>
+        <div class="row">
+            <div class="boxy col-6 offset-5">6 offset 5</div>
+        </div>
+        <div class="row">
+            <div class="boxy col-9 order-2">Written first but displayed second</div>
+            <div class="boxy col-2 order-1">Written second & displayed first</div>
+        </div>
+
+        <h1>Responsive design. Resize the window to watch the div's get moved around by the different breakpoints</h1>
+        <div class="row">
+            <div class="boxy col-12 col-sm-6 col-md-3 col-lg-3"></div>
+            <div class="boxy col-12 col-sm-6 col-md-3 col-lg-4"></div>
+            <div class="boxy col-12 col-sm-6 col-md-3 col-lg-5"></div>
+            <div class="boxy col-12 col-sm-6 col-md-3 col-lg-5"></div>
+            <div class="boxy col-12 col-sm-6 col-md-4 col-lg-3"></div>
+            <div class="boxy col-12 col-sm-6 col-md-4 col-lg-4"></div>
+            <div class="boxy col-12 d-sm-none d-md-block col-md-4 col-lg-6">This div disappears in the small breakpoint as d-sm-none is applied.</div>
+        </div>
+        How can I add margins between these without resulting in overflow? Check how to have divs span over multiple rows
+    </div>
+</body>
+
+</html>

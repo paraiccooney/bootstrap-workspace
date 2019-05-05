@@ -1,0 +1,39 @@
+html body {
+    width:100vw;
+    margin-top:30px;
+    position: relative;
+}
+
+.boxy {
+    background-color: grey;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10px;
+    border:1px solid blue;
+    text-align: center;
+}
+
+/* For the overlay the position needs to be absolute & the parent container(s) set to relative.*/
+.opaque-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.2);
+    pointer-events:none;
+}
+.background { 
+  background: url(https://mountainguidesis.cdn.prismic.io/mountainguidesis/0e6c3efd570b5aaf1dc2164ba640ca44eecefb8d_dorian-tsai-coast-to-coast--61.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100vh;
+  /* Flexbox */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+

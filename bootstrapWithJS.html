@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
+        <!-- fixed-top fixes the navbar to the top of the screen -->
+        <a href="/" class="navbar-brand">Whiskey Drop</a>
+        <!-- button which collapses upon nav on small screens -->
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <!-- mr-auto pushes content to the left -->
+                <li class="active nav-item mr-2">
+                    <!-- mr-2 gives some right hand spacing. Active highlights. --><a class="nav-link" href="/">Home</a></li>
+                <li class="active nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+                <!-- dropdown within the nav-->
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/" id="navBarDropdownMenuLink" role="button" data-toggle="dropdown" ariahaspopup="true" ariaexpanded="false">Whiskeys</a>
+                    <div class="dropdown-menu" aria-labelledby="navBarDropdownMenuLink">
+                        <a class="dropdown-item" href="/">Irish</a>
+                        <a class="dropdown-item" href="/">Scotch</a>
+                        <a class="dropdown-item" href="/">Japanese</a>
+                        <a class="dropdown-item" href="/">American</a>
+
+                    </div>
+                </li>
+
+                <li class="active nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign in/ Sign up</a></li>
+            </ul>
+        </div>
+        <div class="d-none d-sm-block">
+            <!-- the paragraph & sign-in link will not be shown on breakpoints smaller than small. 
+            The third list item above will only be shown on sizes smaller than small. -->
+            <p class="navbar-text my-auto mr-2">
+                <!-- my-auto gives automatic top & bottom margin -->Great whiskey delivered to your door!</p>
+            <a href="/login">Sign in/ Sign up</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="mt-5">A header with a badge at the end <span class="badge badge-success">New</span></h1>
+        <div class="alert alert-warning">
+            <strong>Sale Now On!</strong> We've got a sale now on. 12 months free.
+        </div>
+    </div>
+    
+        <div class="background container-fluid">
+            <div class="opaque-overlay">&nbsp;</div>
+            <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+            <!-- modal code -->
+            <!-- add the id to the first div then go to the button you want to active the modal.
+        Give this button the properties of data-toggle="modal" & data-target="signUpModal" -->
+            <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>You can take this paragraph out & put a form in asking for details & with a submit</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
